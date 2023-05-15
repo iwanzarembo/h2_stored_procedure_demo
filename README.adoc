@@ -1,0 +1,12 @@
+= Stored Procedure Demo
+
+A demo application to show that stored procedures with multiple arguments and one output parameter is not working with H2 version 2.1.214.
+
+The demo application is a maven project, which consist of three files:
+
+. link:src/main/java/com/example/storedproc/StoredProcedureTest.java[StoredProcedureTest.java]
+The Java Code of the stored procedure.
+. link:src/main/resources/add_procedure.sql[add_procedure.sql] which adds the procedure call to the 
+database.
+. link:src/main/java/com/example/storedproc/SimpleStoredProcedureTest.java[SimpleStoredProcedureTest.java]
+Tha test application to run.
