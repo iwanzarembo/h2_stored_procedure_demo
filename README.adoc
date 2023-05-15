@@ -10,3 +10,6 @@ The Java Code of the stored procedure.
 database.
 . link:src/main/java/com/example/storedproc/SimpleStoredProcedureTest.java[SimpleStoredProcedureTest.java]
 Tha test application to run.
+
+The issue for this code here is: 
+https://github.com/h2database/h2database/issues/3798[ Registering an output parameter for a custom stored procedure call leads to an exception #3798 ]
