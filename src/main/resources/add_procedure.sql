@@ -8,3 +8,4 @@ CREATE TABLE IF NOT EXISTS MY_PERSISTENCE  (
 CREATE ALIAS IF NOT EXISTS USER_INSERT   FOR "com.example.storedproc.StoredProcedureTest.insert";
 CREATE ALIAS IF NOT EXISTS USER_RETRIEVE FOR "com.example.storedproc.StoredProcedureTest.get";
 CREATE ALIAS IF NOT EXISTS USER_DELETE   FOR "com.example.storedproc.StoredProcedureTest.delete";
+CREATE ALIAS IF NOT EXISTS USER_GET		 FOR "com.example.storedproc.StoredProcedureTest.getFirst";
