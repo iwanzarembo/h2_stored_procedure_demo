@@ -5,7 +5,9 @@ CREATE TABLE IF NOT EXISTS MY_PERSISTENCE  (
 	constraint INT_PERS_PK primary key (MY_NAME)
 );
 
-CREATE ALIAS IF NOT EXISTS USER_INSERT   FOR "com.example.storedproc.StoredProcedureTest.insert";
-CREATE ALIAS IF NOT EXISTS USER_RETRIEVE FOR "com.example.storedproc.StoredProcedureTest.get";
-CREATE ALIAS IF NOT EXISTS USER_DELETE   FOR "com.example.storedproc.StoredProcedureTest.delete";
-CREATE ALIAS IF NOT EXISTS USER_GET		 FOR "com.example.storedproc.StoredProcedureTest.getFirst";
+CREATE ALIAS IF NOT EXISTS USER_INSERT        FOR "com.example.storedproc.StoredProcedureTest.insert";
+CREATE ALIAS IF NOT EXISTS USER_DELETE        FOR "com.example.storedproc.StoredProcedureTest.delete";
+CREATE ALIAS IF NOT EXISTS USER_GET_FIRST     FOR "com.example.storedproc.StoredProcedureTest.getFirst";
+CREATE ALIAS IF NOT EXISTS USER_GET_SECOND    FOR "com.example.storedproc.StoredProcedureTest.getSecond";
+CREATE ALIAS IF NOT EXISTS USER_GET_THIRD     FOR "com.example.storedproc.StoredProcedureTest.getThird";
+CREATE ALIAS IF NOT EXISTS USER_GET_FIRSTONLY FOR "com.example.storedproc.StoredProcedureTest.getOutParamIdxOneOnly";
