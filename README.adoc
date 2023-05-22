@@ -1,7 +1,13 @@
 = Stored Procedure Demo
+:important-caption: ⚠
 
 A demo application to show how stored procedures with multiple arguments and one output parameter 
 is not working with a H2 database.
+
+IMPORTANT: This type of stored procedures is officially not supported by the H2 Database. See
+https://github.com/h2database/h2database/issues/3798[Registering an output parameter for a custom stored procedure call leads to an exception #3798].
+It is possible, the feature will stop working if the implementation in the `CallableStatement` 
+changes.
 
 The demo application is a maven project, which consist of three files:
 
